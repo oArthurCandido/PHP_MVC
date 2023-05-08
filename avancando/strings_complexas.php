@@ -49,3 +49,5 @@ $contasCorrentes[12345678912] = depositar($contasCorrentes[12345678912],-5);
 foreach($contasCorrentes as $cpf => $conta){
   exibeMensagem("{$conta['titular']}, saldo: {$conta['saldo']}");
 }
+
+//https://www.php.net/manual/en/language.types.string.php
