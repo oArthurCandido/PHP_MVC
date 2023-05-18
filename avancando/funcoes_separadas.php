@@ -24,7 +24,7 @@ function depositar( $conta, float $valorADepositar)
 
 function exibeMensagem( $mensagem) 
 {
-  echo $mensagem .PHP_EOL;
+  echo $mensagem . '<br>';
 }
 
 function titularComLetrasMaiusculas(&$conta)
@@ -34,4 +34,10 @@ function titularComLetrasMaiusculas(&$conta)
 
   return $conta;
 
+}
+
+function exibeConta($conta)
+{
+  echo  "<li>Titular: $conta[titular]. Saldo: {$conta['saldo']}</li>";
+  
 }
